@@ -1,0 +1,1 @@
+# PyRevitHookDocOpenedWS1
