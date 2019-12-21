@@ -2,7 +2,7 @@
 
 SET WORKSET1 CURRENT ON DOC OPEN
 
-https://github.com/cridder
+https://github.com/cridder/PyRevitHookDocOpenedWS1
 
 Place this file in the Hooks folder under your PyRevit extension.
 Workset1 is set current, if it exists, on open of a .rvt file
