@@ -18,6 +18,8 @@ https://www.notion.so/Create-Your-First-Command-2509b43e28bd498fba937f5c1be7f485
 https://www.notion.so/Create-Your-First-Hook-0214eee855fc43cead1e6f30f586a04e
 https://github.com/eirannejad/pyRevit
 
+tested on latest versions or Revit 2016, 2017, 2018, 2019, 2020 with pyRevit v4.7.4 as of 2020-12-23
+
 """
 
 from Autodesk.Revit.DB import FilteredWorksetCollector, WorksetKind
@@ -61,7 +63,8 @@ if doc.IsWorkshared:
 	#if active workset name is workset1
 	if nameActiveWsName == worksetOneSTR:
 		# then quit
-		quit()
+		#quit()  # changed to false for 2016 
+		False
 	# does workset1 exist in list
 	elif worksetOneSTR in listOfWorksets:
 		# if workset1 exists set current
